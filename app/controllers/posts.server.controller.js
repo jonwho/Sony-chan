@@ -36,7 +36,6 @@ var getErrorMessage = function(err) {
  */
 exports.create = function(req, res) {
 	var post = new Post(req.body);
-	post.user = req.user;
 
 	post.save(function(err) {
 		if (err) {
@@ -95,7 +94,7 @@ exports.delete = function(req, res) {
 /**
  * List of Posts
  */
-exports.list = function(req, res) { Post.find().sort('-created').populate('user', 'displayName').exec(function(err, posts) {
+exports.list = function(req, res) { Post.find().sort('-created').exec(function(err, posts) {
 		if (err) {
 			return res.send(400, {
 				message: getErrorMessage(err)
@@ -109,20 +108,10 @@ exports.list = function(req, res) { Post.find().sort('-created').populate('user'
 /**
  * Post middleware
  */
-exports.postByID = function(req, res, next, id) { Post.findById(id).populate('user', 'displayName').exec(function(err, post) {
+exports.postByID = function(req, res, next, id) { Post.findById(id).exec(function(err, post) {
 		if (err) return next(err);
 		if (! post) return next(new Error('Failed to load Post ' + id));
 		req.post = post ;
 		next();
 	});
-};
-
-/**
- * Post authorization middleware
- */
-exports.hasAuthorization = function(req, res, next) {
-	if (req.post.user.id !== req.user.id) {
-		return res.send(403, 'User is not authorized');
-	}
-	next();
 };
