@@ -7,3 +7,78 @@
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
 	display: none !important;
 }
+
+.post {
+	padding: 20px;
+	background: #e5e5e5;
+	margin-top: 20px;
+	clear:both;
+}
+
+.postlink {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.post:hover {
+	background: #c6c6c6;
+	-moz-transition-duration: 0.4s;
+}
+
+.title {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.comment-container {
+	padding: 40px;
+	margin: auto 50px;
+	border: 1px solid #545454;
+}
+
+.trapezoid {
+	height: 0;
+   	border-top: 30px solid #c6c6c6;
+   	border-left: 50px solid transparent;
+   	border-right: 50px solid transparent;
+}
+
+.comment-list-header {
+	display: block;
+	padding: 30px 20px;
+	font-size: 4em;
+}
+
+.comment-body {
+	background: #e5e5e5;
+	margin: 5px;
+	display: block;
+	padding: 20px;
+}
+
+.comment-body p {
+	padding: 10px;
+	font-size: 1em;
+}
+
+.userid {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.time-stamp {
+	margin-left: 10px;
+}
+
+.comment-box {
+
+}
+
+.comment-box-header {
+	display: block;
+	padding: 30px 20px;
+	font-size: 3em;
+}
