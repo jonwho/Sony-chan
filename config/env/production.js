@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	db: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://localhost/sonychan',
+	db: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://sonychan:sonyproduction@kahana.mongohq.com:10075/app27525801', // production use on heroku
 	assets: {
 		lib: {
 			css: [
