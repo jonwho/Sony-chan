@@ -8,11 +8,27 @@
 	display: none !important;
 }
 
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.form-control {
+	border-radius: 0px;
+}
+
+.btn-default {
+	border-radius: 0px;
+}
+
 .post {
-	padding: 20px;
+	padding: 40px 80px;
 	background: #e5e5e5;
 	margin-top: 20px;
-	clear:both;
+}
+
+.post p {
+	padding-top: 10px;
+	font-size: 1.5em;
 }
 
 .postlink {
@@ -23,20 +39,16 @@
 	bottom: 0;
 }
 
-.post:hover {
-	background: #c6c6c6;
-	-moz-transition-duration: 0.4s;
-}
-
 .title {
-	font-size: 2em;
+	font-size: 2.5em;
 	font-weight: bold;
 }
 
 .comment-container {
 	padding: 40px;
 	margin: auto 50px;
-	border: 1px solid #545454;
+	-webkit-box-shadow: 0 0 10px #c6c6c6;
+        box-shadow: 0 0 10px #c6c6c6;
 }
 
 .trapezoid {
@@ -50,26 +62,32 @@
 	display: block;
 	padding: 30px 20px;
 	font-size: 4em;
+	color: #;
+}
+
+hr {
+	background: #ff6600;
 }
 
 .comment-body {
 	background: #e5e5e5;
-	margin: 5px;
+	margin: 20px 5px;
 	display: block;
-	padding: 20px;
+	padding: 20px 40px;
 }
 
 .comment-body p {
-	padding: 10px;
-	font-size: 1em;
+	padding: 20px;
+	font-size: 1.5em;
 }
 
 .userid {
-	font-size: 1.5em;
+	font-size: 1.7em;
 	font-weight: bold;
 }
 
 .time-stamp {
+	font-size: 1.2em;
 	margin-left: 10px;
 }
 
@@ -81,4 +99,8 @@
 	display: block;
 	padding: 30px 20px;
 	font-size: 3em;
+}
+
+.comment-button {
+	background: ;
 }
