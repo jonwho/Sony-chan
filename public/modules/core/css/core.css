@@ -8,16 +8,37 @@
 	display: none !important;
 }
 
+.nav, .pagination, .carousel, .panel-title a {
+	cursor: pointer;
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
+	background: url("http://subtlepatterns.com/patterns/pw_maze_white.png") repeat scroll 0% 0% transparent;
+}
+
+hr {
+	border: 0;
+	height: 0;
+	border-top: 1px solid #575757;
+}
+
+.glyphicon {
+	font-size: 1.2em;
+}
+
+.comment-info {
+	margin-left: 5px;
+	font-size: 1.3em;
+	font-weight: lighter;
 }
 
 .form-control {
-	border-radius: 0px;
+	border-radius: 0;
 }
 
 .btn-default {
-	border-radius: 0px;
+	border-radius: 0;
 }
 
 .post {
@@ -27,7 +48,7 @@ body {
 }
 
 .post p {
-	padding-top: 10px;
+	padding-bottom: 10px;
 	font-size: 1.5em;
 }
 
@@ -47,8 +68,10 @@ body {
 .comment-container {
 	padding: 40px;
 	margin: auto 50px;
+	-moz-box-shadow: 0 0 10px #c6c6c6;
 	-webkit-box-shadow: 0 0 10px #c6c6c6;
         box-shadow: 0 0 10px #c6c6c6;
+        background-color: #fff;
 }
 
 .trapezoid {
@@ -62,11 +85,14 @@ body {
 	display: block;
 	padding: 30px 20px;
 	font-size: 4em;
-	color: #;
 }
 
-hr {
-	background: #ff6600;
+.nothing-here {
+	margin: 50px;
+	font-size: 2em;
+	font-weight: lighter;
+	text-align: center;
+	font-style: italic;
 }
 
 .comment-body {
@@ -91,16 +117,8 @@ hr {
 	margin-left: 10px;
 }
 
-.comment-box {
-
-}
-
 .comment-box-header {
 	display: block;
 	padding: 30px 20px;
 	font-size: 3em;
-}
-
-.comment-button {
-	background: ;
 }

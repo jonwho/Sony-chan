@@ -3,49 +3,91 @@
 	<div class="container">
 		<div class="row">
 			<div id="00001" class="post col-md-12">
-				<a href="#" class="postlink"></a>
+				<a ng-click="isCollapsed=!isCollapsed" href="#" class="postlink"></a> 
 				<span class="title">Sample post #1</span>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis consequat orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-			</div>
-			<div class="clearfix"></div>
-			<div class="trapezoid col-md-12"></div>
-			<div class="comment-container">
-				<span class="comment-list-header">3 Comments</span>
 				<hr>
-				<div class="comment-body">
-					<span class="userid">Anonymous</span>
-					<span class="time-stamp">2014-07-17 11:45AM</span>
-					<p>Hello World</p>
-				</div>
-				<div class="comment-body">
-					<span class="userid">Anonymous</span>
-					<span class="time-stamp">2014-07-17 12:26PM</span>
-					<p>Comment Dos</p>
-				</div>
-				<div class="comment-body">
-					<span class="userid">Anonymous</span>
-					<span class="time-stamp">2014-07-17 3:50PM</span>
-					<p>Comment Tres</p>
-				</div>
-				<div class="comment-box">
-					<span class="comment-box-header">Leave a comment</span>
-					<textarea class="form-control" rows="3"></textarea>
-					<button type="button" class="btn btn-default pull-right">Submit</button>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis consequat orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+				<span class="glyphicon glyphicon-comment"></span>
+				<span class="comment-info">3 Comments</span>
+			</div>
+			<div collapse="isCollapsed">
+				<div class="clearfix"></div>
+				<div class="trapezoid col-md-12"></div>
+				<div class="comment-container">
+					<span class="comment-list-header">3 Comments</span>
+					<div class="comment-body">
+						<span class="userid">Anonymous</span>
+						<span class="time-stamp">2014-07-17 11:45AM</span>
+						<p>Hello World</p>
+					</div>
+					<div class="comment-body">
+						<span class="userid">Anonymous</span>
+						<span class="time-stamp">2014-07-17 12:26PM</span>
+						<p>Comment Dos</p>
+					</div>
+					<div class="comment-body">
+						<span class="userid">Anonymous</span>
+						<span class="time-stamp">2014-07-17 3:50PM</span>
+						<p>Comment Tres</p>
+					</div>
+					<div class="comment-box">
+						<span class="comment-box-header">Leave a comment</span>
+						<textarea class="form-control" rows="3"></textarea>
+						<button type="button" class="btn btn-default pull-right">Submit</button>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div id="00002" class="post col-md-12">
-				<a href="#" class="postlink"></a>
+				<a ng-click="isCollapsed1=!isCollapsed1" href="#" class="postlink"></a>
 				<span class="title">Sample post #2</span>
+				<hr>
 				<p>Etiam eget lectus ac augue blandit tincidunt. Curabitur et bibendum sem. Curabitur ornare venenatis nibh eget convallis.</p>
+				<span class="glyphicon glyphicon-comment"></span>
+				<span class="comment-info">0 Comments</span>
+			</div>
+			<div collapse="isCollapsed1">
+				<div class="clearfix"></div>
+				<div class="trapezoid col-md-12"></div>
+				<div class="comment-container">
+					<span class="comment-list-header">0 Comments</span>
+					<div class="nothing-here text-center">
+						<span>Nothing Here! : )</span>
+					</div>
+					<div class="comment-box">
+						<span class="comment-box-header">Leave a comment</span>
+						<textarea class="form-control" rows="3"></textarea>
+						<button type="button" class="btn btn-default pull-right">Submit</button>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div id="00003" class="post col-md-12">
-				<a href="#" class="postlink"></a>
+				<a ng-click="isCollapsed2=!isCollapsed2" href="#" class="postlink"></a>
 				<span class="title">Sample post #3</span>
+				<hr>
 				<p>Phasellus eleifend bibendum neque eget viverra. Praesent consectetur odio ut felis egestas molestie. Morbi lacinia volutpat tortor sed auctor. </p>
+				<span class="glyphicon glyphicon-comment"></span>
+				<span class="comment-info">1 Comment</span>
+			</div>
+			<div collapse="isCollapsed2">
+				<div class="clearfix"></div>
+				<div class="trapezoid col-md-12"></div>
+				<div class="comment-container">
+					<span class="comment-list-header">1 Comment</span>
+					<div class="comment-body">
+						<span class="userid">Anonymous</span>
+						<span class="time-stamp">2014-07-17 11:45AM</span>
+						<p>Hello World</p>
+					</div>
+					<div class="comment-box">
+						<span class="comment-box-header">Leave a comment</span>
+						<textarea class="form-control" rows="3"></textarea>
+						<button type="button" class="btn btn-default pull-right">Submit</button>
+					</div>
+				</div>
 			</div>
 		</div>
 
